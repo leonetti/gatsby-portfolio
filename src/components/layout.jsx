@@ -10,7 +10,9 @@ import '../styles/layout.module.scss';
 const Layout = ({ children }) => (
   <>
     <Header />
-    {children}
+    <div>
+      <main id="home">{children}</main>
+    </div>
     <Footer />
   </>
 );
