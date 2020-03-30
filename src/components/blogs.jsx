@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Blogs = () => (
   <>
-    <div>Blog titles go here</div>
+    <div id="blogs">Blog titles go here</div>
 
     <Link to="/blogs">
       <span>More Blogs</span>

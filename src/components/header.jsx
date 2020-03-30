@@ -1,11 +1,13 @@
 /* eslint-disable max-len */
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
 import { motion } from 'framer-motion';
 
 import headerStyles from '../styles/header.module.scss';
+
+let initialLoad = true;
 
 const container = {
   hidden: {
@@ -105,12 +107,15 @@ Path.defaultProps = {
   variants: {},
 };
 
-// const hasClass = (ele, cls) => ele.className.match(new RegExp(`(\\s|^)${cls}(\\s|$)`));
-
-const Header = () => {
+const Header = ({ header }) => {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef(null);
   const menuRef = useRef(null);
+
+
+  useEffect(() => {
+    initialLoad = false;
+  }, []);
 
   return (
     <div className={classNames({
@@ -121,11 +126,11 @@ const Header = () => {
       <div className={headerStyles.container}>
         <div className={headerStyles.content}>
           <div className={headerStyles.logoContainer}>
-            <Link to="/" onClick={() => setIsOpen(false)}>
+            <Link to={header === 'home' ? '/#home' : '/'} onClick={() => setIsOpen(false)}>
               <motion.div
                 className={headerStyles.logoBox}
                 variants={container}
-                initial="hidden"
+                initial={initialLoad ? 'hidden' : 'visible'}
                 animate="visible"
               >
                 <motion.div
@@ -155,32 +160,49 @@ const Header = () => {
           >
             <ul>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#home">Home</Link>
+                <Link onClick={() => setIsOpen(false)} to={header === 'home' ? '/#home' : '/'}>Home</Link>
               </li>
+              {header === 'home' && (
+                <>
+                  <li>
+                    <Link onClick={() => setIsOpen(false)} to="/#about">About</Link>
+                  </li>
+                  <li>
+                    <Link onClick={() => setIsOpen(false)} to="/#skills">Skills</Link>
+                  </li>
+                </>
+              )}
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#about">About</Link>
+                <Link onClick={() => setIsOpen(false)} to={header === 'home' ? '/#blogs' : '/blogs'}>Blogs</Link>
               </li>
-              <li>
-                <Link onClick={() => setIsOpen(false)} to="/#skills">Skills</Link>
-              </li>
-              <li>
-                <Link onClick={() => setIsOpen(false)} to="/#blogs">Blogs</Link>
-              </li>
-              <li>
-                <Link onClick={() => setIsOpen(false)} to="/#work">Work</Link>
-              </li>
-              <li>
-                <Link onClick={() => setIsOpen(false)} to="/#testimonials">Testimonials</Link>
-              </li>
-              <li>
-                <Link onClick={() => setIsOpen(false)} to="/#contact">Contact</Link>
-              </li>
+              {header === 'home' && (
+                <>
+                  <li>
+                    <Link onClick={() => setIsOpen(false)} to="/#work">Work</Link>
+                  </li>
+                  <li>
+                    <Link onClick={() => setIsOpen(false)} to="/#testimonials">Testimonials</Link>
+                  </li>
+                  <li>
+                    <Link onClick={() => setIsOpen(false)} to="/#contact">Contact</Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+
+Header.propTypes = {
+  header: PropTypes.string,
+};
+
+Header.defaultProps = {
+  header: undefined,
 };
 
 export default Header;

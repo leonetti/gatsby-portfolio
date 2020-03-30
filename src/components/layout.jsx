@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import smoothScroll from 'smooth-scroll';
 
 import Header from './header';
 import Footer from './footer';
@@ -7,9 +8,14 @@ import Footer from './footer';
 import '../styles/reset.scss';
 import '../styles/common.scss';
 
-const Layout = ({ children }) => (
+
+if (typeof window !== 'undefined') {
+  smoothScroll('a[href*="#"]');
+}
+
+const Layout = ({ children, header }) => (
   <>
-    <Header />
+    <Header header={header} />
     <div>
       <main id="home">{children}</main>
     </div>
@@ -19,6 +25,11 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  header: PropTypes.string,
+};
+
+Layout.defaultProps = {
+  header: undefined,
 };
 
 export default Layout;

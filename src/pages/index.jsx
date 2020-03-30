@@ -5,7 +5,7 @@ import Landing from '../components/landing';
 import Blogs from '../components/blogs';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout header="home">
     <Landing />
     <Blogs />
   </Layout>
