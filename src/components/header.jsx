@@ -1,5 +1,7 @@
 /* eslint-disable max-len */
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { Link } from 'gatsby';
 import { motion } from 'framer-motion';
 
@@ -9,11 +11,14 @@ const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
     opacity: 1,
+    // scale: [0.2, 1.1, 1],
     scale: 1,
+    // rotate: [180, 360],
+    rotate: 360,
     transition: {
       delay: 0.3,
       when: 'beforeChildren',
-      staggerChildren: 0.5,
+      // staggerChildren: 0.2,
     },
   },
 };
@@ -46,56 +51,108 @@ const Icon = () => (
   </svg>
 );
 
-const Header = () => (
-  <div className={headerStyles.header}>
-    <div className={headerStyles.container}>
-      <div className={headerStyles.content}>
-        <div className={headerStyles.logoContainer}>
-          <Link to="/">
-            <motion.div
-              className={headerStyles.logoBox}
-              variants={container}
-              initial="hidden"
-              animate="visible"
-            >
+const MenuToggle = ({ toggle }) => (
+  <button type="button" onClick={toggle} className={headerStyles.menuToggleButton}>
+    <svg width="23" height="18" viewBox="0 0 23 18">
+      <Path
+        variants={{
+          closed: { d: 'M 2 2.5 L 20 2.5' },
+          open: { d: 'M 3 16.5 L 17 2.5' },
+        }}
+      />
+      <Path
+        d="M 2 9.423 L 20 9.423"
+        variants={{
+          closed: { opacity: 1 },
+          open: { opacity: 0 },
+        }}
+      />
+      <Path
+        variants={{
+          closed: { d: 'M 2 16.346 L 20 16.346' },
+          open: { d: 'M 3 2.5 L 17 16.346' },
+        }}
+      />
+    </svg>
+  </button>
+);
+
+MenuToggle.propTypes = {
+  toggle: PropTypes.bool.isRequired,
+};
+
+const Path = (props) => (
+  <motion.path
+    fill="transparent"
+    strokeWidth="2"
+    stroke="white"
+    strokeLinecap="round"
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    {...props}
+  />
+);
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useRef(null);
+  return (
+    <div className={classNames({
+      [headerStyles.header]: true,
+      [headerStyles.responsiveMenuOpen]: isOpen,
+    })}
+    >
+      <div className={headerStyles.container}>
+        <div className={headerStyles.content}>
+          <div className={headerStyles.logoContainer}>
+            <Link to="/" onClick={() => setIsOpen(false)}>
               <motion.div
-                variants={icon}
-                whileHover={{ scale: 1.05, rotate: 10 }}
+                className={headerStyles.logoBox}
+                variants={container}
+                initial="hidden"
+                animate="visible"
               >
-                <Icon />
+                <motion.div
+                  variants={icon}
+                  whileHover={{ scale: 1.05, rotate: 10 }}
+                >
+                  <Icon />
+                </motion.div>
               </motion.div>
-            </motion.div>
-          </Link>
-        </div>
-        <div className={headerStyles.responsiveMenu} />
-        <div className={headerStyles.menu}>
-          <ul>
-            <li>
-              <Link to="/#home">Home</Link>
-            </li>
-            <li>
-              <Link to="/#about">About</Link>
-            </li>
-            <li>
-              <Link to="/#skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="/#blogs">Blogs</Link>
-            </li>
-            <li>
-              <Link to="/#work">Work</Link>
-            </li>
-            <li>
-              <Link to="/#testimonials">Testimonials</Link>
-            </li>
-            <li>
-              <Link to="/#contact">Contact</Link>
-            </li>
-          </ul>
+            </Link>
+          </div>
+          <motion.div className={headerStyles.menuToggle} ref={containerRef} initial={false} animate={isOpen ? 'open' : 'closed'}>
+            <MenuToggle toggle={() => setIsOpen((prevState) => !prevState)} />
+          </motion.div>
+          <div className={headerStyles.responsiveMenu} />
+          <div className={headerStyles.menu}>
+            <ul>
+              <li>
+                <Link onClick={() => setIsOpen(false)} to="/#home">Home</Link>
+              </li>
+              <li>
+                <Link onClick={() => setIsOpen(false)} to="/#about">About</Link>
+              </li>
+              <li>
+                <Link onClick={() => setIsOpen(false)} to="/#skills">Skills</Link>
+              </li>
+              <li>
+                <Link onClick={() => setIsOpen(false)} to="/#blogs">Blogs</Link>
+              </li>
+              <li>
+                <Link onClick={() => setIsOpen(false)} to="/#work">Work</Link>
+              </li>
+              <li>
+                <Link onClick={() => setIsOpen(false)} to="/#testimonials">Testimonials</Link>
+              </li>
+              <li>
+                <Link onClick={() => setIsOpen(false)} to="/#contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Header;
