@@ -5,6 +5,7 @@ import Header from './header';
 import Footer from './footer';
 
 import '../styles/reset.scss';
+import '../styles/layout.module.scss';
 
 const Layout = ({ children }) => (
   <>
