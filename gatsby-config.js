@@ -6,4 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-}
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-eslint',
+      loader: 'eslint-loader',
+      options: {
+        emitWarning: true,
+        failOnWarning: false,
+      },
+    },
+  ],
+};
