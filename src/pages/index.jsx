@@ -1,13 +1,12 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import Landing from '../components/landing';
 import Blogs from '../components/blogs';
-
-// import indexStyles from '../styles/index.module.scss';
 
 const IndexPage = () => (
   <Layout>
-    <div>Hello Alexander!</div>
+    <Landing />
     <Blogs />
   </Layout>
 );

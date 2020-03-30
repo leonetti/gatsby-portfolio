@@ -105,9 +105,20 @@ Path.defaultProps = {
   variants: {},
 };
 
+const hasClass = (ele, cls) => ele.className.match(new RegExp(`(\\s|^)${cls}(\\s|$)`));
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef(null);
+
+  const toggleOpen = () => {
+    setIsOpen((prevState) => !prevState);
+    if (hasClass(global.window.document.body, 'modal-open')) {
+      global.window.document.body.classList.remove('modal-open');
+    } else {
+      global.window.document.body.classList.add('modal-open');
+    }
+  };
   return (
     <div className={classNames({
       [headerStyles.header]: true,
@@ -117,7 +128,7 @@ const Header = () => {
       <div className={headerStyles.container}>
         <div className={headerStyles.content}>
           <div className={headerStyles.logoContainer}>
-            <Link to="/" onClick={() => setIsOpen(false)}>
+            <Link to="/" onClick={toggleOpen}>
               <motion.div
                 className={headerStyles.logoBox}
                 variants={container}
@@ -142,31 +153,31 @@ const Header = () => {
             whileTap={{ scale: 1 }}
             animate={isOpen ? 'open' : 'closed'}
           >
-            <MenuToggle toggle={() => setIsOpen((prevState) => !prevState)} />
+            <MenuToggle toggle={toggleOpen} />
           </motion.div>
           <div className={headerStyles.responsiveMenu} />
           <div className={headerStyles.menu}>
             <ul>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#home">Home</Link>
+                <Link onClick={toggleOpen} to="/#home">Home</Link>
               </li>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#about">About</Link>
+                <Link onClick={toggleOpen} to="/#about">About</Link>
               </li>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#skills">Skills</Link>
+                <Link onClick={toggleOpen} to="/#skills">Skills</Link>
               </li>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#blogs">Blogs</Link>
+                <Link onClick={toggleOpen} to="/#blogs">Blogs</Link>
               </li>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#work">Work</Link>
+                <Link onClick={toggleOpen} to="/#work">Work</Link>
               </li>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#testimonials">Testimonials</Link>
+                <Link onClick={toggleOpen} to="/#testimonials">Testimonials</Link>
               </li>
               <li>
-                <Link onClick={() => setIsOpen(false)} to="/#contact">Contact</Link>
+                <Link onClick={toggleOpen} to="/#contact">Contact</Link>
               </li>
             </ul>
           </div>
