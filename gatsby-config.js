@@ -15,5 +15,6 @@ module.exports = {
         failOnWarning: false,
       },
     },
+    'gatsby-plugin-sass',
   ],
 };
