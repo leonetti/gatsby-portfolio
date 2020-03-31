@@ -56,7 +56,6 @@ const About = ({ data }) => (
 About.propTypes = {
   data: PropTypes.shape({
     photo: PropTypes.object,
-    avatarImage: PropTypes.object,
     name: PropTypes.string,
     designation: PropTypes.string,
     description: PropTypes.string,

@@ -26,7 +26,6 @@ const IndexPage = ({ data }) => (
     <About
       data={{
         photo: data.contentfulAboutMe.photo,
-        avatarImage: data.contentfulAboutMe.avatarImage,
         name: data.contentfulAboutMe.name,
         designation: data.contentfulAboutMe.designation,
         description: data.contentfulAboutMe.description.description,
