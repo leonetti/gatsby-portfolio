@@ -30,6 +30,14 @@
   text-align: center;
   z-index: 9;
   min-width: 766px;
+
+  @media screen and (max-width:767px) {
+    min-width: 474px;
+  }
+
+  @media screen and (max-width:475px) {
+    min-width: auto;
+  }
 }
 
 .bannerIntroText {
@@ -44,16 +52,28 @@
   margin-bottom: 20px;
   font-weight: 400;
   @include text-shadow;
+
+  @media screen and (max-width:475px) {
+    font-size: 20px;
+  }
 }
 
 .heading {
-  font-size: 80px;
+  font-size: 75px;
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 1.1px;
   @include text-shadow;
+
+  @media screen and (max-width:767px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width:475px) {
+    font-size: 30px;
+  }
 }
 
 .bannerList {
