@@ -2789,7 +2789,7 @@
         "id": "3jZ2ne8tOyoN7s3Yem2Hqm",
         "type": "Asset",
         "createdAt": "2020-03-29T02:35:19.371Z",
-        "updatedAt": "2020-03-30T19:50:26.860Z",
+        "updatedAt": "2020-03-31T03:05:53.035Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2797,8 +2797,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2020-03-29T02:35:40.442Z",
+        "publishedVersion": 7,
+        "publishedAt": "2020-03-31T03:05:53.035Z",
         "firstPublishedAt": "2020-03-29T02:35:40.442Z",
         "createdBy": {
           "sys": {
@@ -2814,8 +2814,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 1,
-        "version": 7,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",

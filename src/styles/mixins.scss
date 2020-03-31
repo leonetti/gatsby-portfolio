@@ -1,0 +1,5 @@
+@import './color-variables.scss';
+
+@mixin text-shadow {
+  text-shadow: 1px 1px 4px $grayHeader;
+}

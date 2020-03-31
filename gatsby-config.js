@@ -22,6 +22,8 @@ module.exports = {
         accessToken,
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-eslint',
       loader: 'eslint-loader',
