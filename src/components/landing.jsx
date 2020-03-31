@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import { motion } from 'framer-motion';
 
+import Social from './social';
+
 import landingStyles from '../styles/landing.module.scss';
 
 const textVariant = {
@@ -20,11 +22,9 @@ const Landing = ({ data }) => (
   <div className={landingStyles.landing}>
     <Img
       fluid={data.bannerImage.fluid}
-      objectFit="cover"
-      objectPosition="50% 50%"
       className={landingStyles.hero}
     />
-    <div className={landingStyles.bannerInfo}>
+    <section className={landingStyles.bannerInfo}>
       <motion.p
         className={landingStyles.bannerSubText}
         initial="hidden"
@@ -43,29 +43,13 @@ const Landing = ({ data }) => (
           <li key={shortId.generate()}>{item}</li>
         ))}
       </ul>
-      <ul className={landingStyles.social}>
-        <li>
-          <a
-            className="fab fa-linkedin-in"
-            href={data.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className={landingStyles.hidden}>LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a
-            className="fab fa-github"
-            href={data.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className={landingStyles.hidden}>GitHub</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+      <Social
+        data={{
+          linkedin: data.linkedin,
+          github: data.github,
+        }}
+      />
+    </section>
   </div>
 );
 

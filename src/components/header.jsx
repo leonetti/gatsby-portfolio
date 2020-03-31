@@ -20,6 +20,7 @@ const container = {
     rotate: 360,
     transition: {
       delay: 0.3,
+      duration: 1,
       when: 'beforeChildren',
     },
   },
@@ -154,7 +155,7 @@ const Header = ({ header }) => {
             <MenuToggle toggle={() => setIsOpen((prevState) => !prevState)} />
           </motion.div>
           <div className={headerStyles.responsiveMenu} />
-          <div
+          <nav
             ref={menuRef}
             className={headerStyles.menu}
           >
@@ -189,7 +190,7 @@ const Header = ({ header }) => {
                 </>
               )}
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
     </div>

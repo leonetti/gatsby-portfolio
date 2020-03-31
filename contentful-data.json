@@ -353,7 +353,7 @@
         "id": "aboutMe",
         "type": "ContentType",
         "createdAt": "2020-03-29T02:35:12.158Z",
-        "updatedAt": "2020-03-31T07:51:21.560Z",
+        "updatedAt": "2020-03-31T10:25:16.733Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -361,8 +361,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 13,
-        "publishedAt": "2020-03-31T07:51:21.560Z",
+        "publishedVersion": 17,
+        "publishedAt": "2020-03-31T10:25:16.733Z",
         "firstPublishedAt": "2020-03-29T02:35:13.014Z",
         "createdBy": {
           "sys": {
@@ -378,8 +378,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 7,
-        "version": 14,
+        "publishedCounter": 9,
+        "version": 18,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -420,18 +420,6 @@
           "type": "Link",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "avatarImage",
-          "name": "Avatar Image",
-          "type": "Link",
-          "localized": false,
-          "required": false,
           "validations": [
           ],
           "disabled": false,
@@ -1001,7 +989,7 @@
             "linkType": "Space"
           }
         },
-        "version": 14,
+        "version": 18,
         "createdAt": "2020-03-29T02:35:13.096Z",
         "createdBy": {
           "sys": {
@@ -1010,7 +998,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-03-31T07:51:22.464Z",
+        "updatedAt": "2020-03-31T10:25:17.298Z",
         "updatedBy": {
           "sys": {
             "id": "7936xG1RBtwNYADjgD0U37",
@@ -1046,11 +1034,6 @@
         },
         {
           "fieldId": "photo",
-          "widgetId": "assetLinkEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "avatarImage",
           "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         },
@@ -1239,424 +1222,10 @@
             "id": "xckcqgv0vy98"
           }
         },
-        "id": "CJvcVdHebL7vz3bWAIqwJ",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:48.147Z",
-        "updatedAt": "2020-03-29T02:35:59.632Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:59.632Z",
-        "firstPublishedAt": "2020-03-29T02:35:59.632Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "testimonials"
-          }
-        }
-      },
-      "fields": {
-        "avatarImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4yXZnfglqynUp9M1BwYzGy"
-            }
-          }
-        },
-        "name": {
-          "en-US": "Lorem Ipsum"
-        },
-        "subTitle": {
-          "en-US": "Lorem Ipsum"
-        },
-        "description": {
-          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "3ESYbkZtWyPnPy6nDQFAHg",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:48.157Z",
-        "updatedAt": "2020-03-30T19:56:58.604Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 7,
-        "publishedAt": "2020-03-30T19:56:58.604Z",
-        "firstPublishedAt": "2020-03-29T02:35:51.746Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 8,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "service"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "CSS"
-        },
-        "description": {
-          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "2MEkguSekmXg1wtgqfEaXV",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:48.246Z",
-        "updatedAt": "2020-03-30T19:56:58.594Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 7,
-        "publishedAt": "2020-03-30T19:56:58.594Z",
-        "firstPublishedAt": "2020-03-29T02:36:01.009Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 8,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "service"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "HTML"
-        },
-        "description": {
-          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "2W6zmk0B7Kyz94SU8VRYnD",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:48.255Z",
-        "updatedAt": "2020-03-29T02:35:59.200Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:59.200Z",
-        "firstPublishedAt": "2020-03-29T02:35:59.200Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "testimonials"
-          }
-        }
-      },
-      "fields": {
-        "avatarImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4yXZnfglqynUp9M1BwYzGy"
-            }
-          }
-        },
-        "name": {
-          "en-US": "Lorem Ipsum"
-        },
-        "subTitle": {
-          "en-US": "Lorem Ipsum"
-        },
-        "description": {
-          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "5rrD15RhF8dMqpeLktOozn",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:48.256Z",
-        "updatedAt": "2020-03-30T19:56:58.592Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 10,
-        "publishedAt": "2020-03-30T19:56:58.592Z",
-        "firstPublishedAt": "2020-03-29T02:36:00.571Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 11,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "service"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Javascript"
-        },
-        "description": {
-          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "4JrBcqVYRay1QiJH6zc7qO",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:48.282Z",
-        "updatedAt": "2020-03-29T02:36:00.080Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:36:00.080Z",
-        "firstPublishedAt": "2020-03-29T02:36:00.080Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "testimonials"
-          }
-        }
-      },
-      "fields": {
-        "avatarImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4yXZnfglqynUp9M1BwYzGy"
-            }
-          }
-        },
-        "name": {
-          "en-US": "Lorem Ipsum"
-        },
-        "subTitle": {
-          "en-US": "Lorem Ipsum"
-        },
-        "description": {
-          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
         "id": "6caZg1KgLxQN4VE2QOJbCk",
         "type": "Entry",
         "createdAt": "2020-03-29T02:35:48.572Z",
-        "updatedAt": "2020-03-31T07:50:37.390Z",
+        "updatedAt": "2020-03-31T10:24:43.831Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1664,8 +1233,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 47,
-        "publishedAt": "2020-03-31T07:50:37.390Z",
+        "publishedVersion": 122,
+        "publishedAt": "2020-03-31T10:24:43.831Z",
         "firstPublishedAt": "2020-03-29T02:35:52.203Z",
         "createdBy": {
           "sys": {
@@ -1681,8 +1250,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 3,
-        "version": 48,
+        "publishedCounter": 6,
+        "version": 123,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1714,17 +1283,8 @@
             }
           }
         },
-        "avatarImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4yXZnfglqynUp9M1BwYzGy"
-            }
-          }
-        },
         "description": {
-          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+          "en-US": "I am a front-end developer who is passionate for creating modern & functional web applications that have a clean and intuitive user interface. I love writing modular code that is re-usable and integrating internal/external data from RESTful API's and GraphQL into my work. I have experience in front-end frameworks such as React and Angular, libraries like jQuery and Lodash, as well as back-end\nNode frameworks like Express. I enjoy working on teams with clear and constant communication techniques that allow for better organization. My experience creating applications demonstrates my ability to create a rich user experience for the client."
         },
         "age": {
           "en-US": "28"
@@ -1756,568 +1316,6 @@
         },
         "linkedin": {
           "en-US": "https://www.linkedin.com/in/alexanderleonetti/"
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "19MTmPou8GOGA8v8IVrEGc",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:50.609Z",
-        "updatedAt": "2020-03-29T02:35:54.344Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:54.344Z",
-        "firstPublishedAt": "2020-03-29T02:35:54.344Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "works"
-          }
-        }
-      },
-      "fields": {
-        "siteName": {
-          "en-US": "Site Name 2"
-        },
-        "url": {
-          "en-US": "#"
-        },
-        "image": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "LkWkisSeBiTaYyaaH6OTr"
-            }
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "4nUAmFYivv1fE0wa4GEE2T",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:50.772Z",
-        "updatedAt": "2020-03-29T02:35:54.777Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:54.777Z",
-        "firstPublishedAt": "2020-03-29T02:35:54.777Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "works"
-          }
-        }
-      },
-      "fields": {
-        "siteName": {
-          "en-US": "Site Name 1"
-        },
-        "url": {
-          "en-US": "#"
-        },
-        "image": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "1SI8CkaEpAjaXLVcUkcIPA"
-            }
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "kvdWcngcAWfKNWbU8TMeL",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:51.219Z",
-        "updatedAt": "2020-03-29T02:35:57.302Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:57.302Z",
-        "firstPublishedAt": "2020-03-29T02:35:57.302Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "blogs"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Blog Title 2"
-        },
-        "slug": {
-          "en-US": "blog-title-2"
-        },
-        "featureImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "3GzB8VwODxcATgqYrZLXcA"
-            }
-          }
-        },
-        "description": {
-          "en-US": "## What is Lorem Ipsum?\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "6dPFHmvvwRLTmishla3Y55",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:51.286Z",
-        "updatedAt": "2020-03-29T02:35:57.715Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:57.715Z",
-        "firstPublishedAt": "2020-03-29T02:35:57.715Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "blogs"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Blog Title 1"
-        },
-        "slug": {
-          "en-US": "blog-title-1"
-        },
-        "featureImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "7IyIhq0ijQoK3asaaOMQJM"
-            }
-          }
-        },
-        "description": {
-          "en-US": "## What is Lorem Ipsum?\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "1vaZauN3G1LbRsJutH3AU9",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:51.359Z",
-        "updatedAt": "2020-03-30T20:47:57.059Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:58.177Z",
-        "firstPublishedAt": "2020-03-29T02:35:58.177Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 40,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "siteInformation"
-          }
-        }
-      },
-      "fields": {
-        "siteName": {
-          "en-US": "Alex Leonetti"
-        },
-        "siteUrl": {
-          "en-US": "http://localhost:8000/"
-        },
-        "siteDescription": {
-          "en-US": "Personal Site"
-        },
-        "menus": {
-          "en-US": [
-            "Photos",
-            "Service",
-            "About",
-            "Skills",
-            "Blogs",
-            "Work",
-            "Testimonials",
-            "Contact"
-          ]
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "3PgxStGrnRqEN9L1miJyJM",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:51.371Z",
-        "updatedAt": "2020-03-29T02:35:58.687Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:58.687Z",
-        "firstPublishedAt": "2020-03-29T02:35:58.687Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "photos"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "My Photos"
-        },
-        "photos": {
-          "en-US": [
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "018YEl9qSSZ3sbfhQdhgxI"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "5wQiuLEmv6IpivkRvSeEFf"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "1SI8CkaEpAjaXLVcUkcIPA"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "18ZNTGLiqsZUOadteGwojO"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "17Df0rX2XAdX0Vcg6DCXXv"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "LkWkisSeBiTaYyaaH6OTr"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "7vfITnS5gebujPUeOVwLb"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "4MDGnTnc4h5DbSlWscJKrF"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "1cxUznYGiPOJ5GNNpkVAOr"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "4R3Nt1Xxk9zUtIAkWqPrW3"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "5lvkZ1FDXMzUud9VKR1Ruq"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "1fANVR8QZYfacMuIMcMT2G"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "3GzB8VwODxcATgqYrZLXcA"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "32Vh1BnHEripiMFnxck0uH"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "1TdUwUBvE0LUiuESgXyi3C"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "7IyIhq0ijQoK3asaaOMQJM"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "3jZ2ne8tOyoN7s3Yem2Hqm"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Asset",
-                "id": "48G4Y9AtIb3gNFex4yAE9N"
-              }
-            }
-          ]
         }
       }
     }
@@ -2402,7 +1400,7 @@
         "id": "4yXZnfglqynUp9M1BwYzGy",
         "type": "Asset",
         "createdAt": "2020-03-29T02:35:18.927Z",
-        "updatedAt": "2020-03-30T19:49:31.202Z",
+        "updatedAt": "2020-03-31T08:30:08.684Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2410,8 +1408,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2020-03-29T02:35:47.380Z",
+        "publishedVersion": 13,
+        "publishedAt": "2020-03-31T08:30:08.684Z",
         "firstPublishedAt": "2020-03-29T02:35:47.380Z",
         "createdBy": {
           "sys": {
@@ -2427,8 +1425,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 1,
-        "version": 10,
+        "publishedCounter": 2,
+        "version": 14,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2443,15 +1441,15 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/xckcqgv0vy98/4yXZnfglqynUp9M1BwYzGy/f886b7894535f2f2661eb27e82ff152a/Screen_Shot_2020-03-30_at_12.49.08_PM.png",
+            "url": "//images.ctfassets.net/xckcqgv0vy98/4yXZnfglqynUp9M1BwYzGy/50f392a5cfea88d69341a812b9c8ead5/Screen_Shot_2020-03-30_at_12.49.08_PM-min.png",
             "details": {
-              "size": 2504770,
+              "size": 700816,
               "image": {
                 "width": 950,
                 "height": 1192
               }
             },
-            "fileName": "Screen Shot 2020-03-30 at 12.49.08 PM.png",
+            "fileName": "Screen Shot 2020-03-30 at 12.49.08 PM-min.png",
             "contentType": "image/png"
           }
         }
@@ -2670,7 +1668,7 @@
         "id": "5053xqiD6rGY5Z3xDASnAo",
         "type": "Asset",
         "createdAt": "2020-03-29T02:35:18.939Z",
-        "updatedAt": "2020-03-30T19:48:17.636Z",
+        "updatedAt": "2020-03-31T10:17:28.542Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2678,8 +1676,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2020-03-29T02:35:40.062Z",
+        "publishedVersion": 17,
+        "publishedAt": "2020-03-31T10:17:28.542Z",
         "firstPublishedAt": "2020-03-29T02:35:40.062Z",
         "createdBy": {
           "sys": {
@@ -2695,8 +1693,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 1,
-        "version": 10,
+        "publishedCounter": 3,
+        "version": 18,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2711,15 +1709,15 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/xckcqgv0vy98/5053xqiD6rGY5Z3xDASnAo/1cd14b87cec430605cb5653f1c817141/Screen_Shot_2020-03-30_at_12.48.02_PM.png",
+            "url": "//images.ctfassets.net/xckcqgv0vy98/5053xqiD6rGY5Z3xDASnAo/cfaca904595fbbda8692a32947ac7a96/Screen_Shot_2020-03-31_at_3.16.19_AM-min.png",
             "details": {
-              "size": 734679,
+              "size": 447444,
               "image": {
-                "width": 584,
-                "height": 758
+                "width": 1008,
+                "height": 742
               }
             },
-            "fileName": "Screen Shot 2020-03-30 at 12.48.02 PM.png",
+            "fileName": "Screen Shot 2020-03-31 at 3.16.19 AM-min.png",
             "contentType": "image/png"
           }
         }

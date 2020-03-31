@@ -1,4 +1,4 @@
-@import './color-variables.scss';
+@import './mixins.scss';
 
 .header {
   // rgba of $grey
@@ -83,7 +83,7 @@
       position: absolute;
       bottom: -3px;
       left: 0;
-      background: #fff;  
+      background: $white;  
       transition: width 0.4s;
     }
 
@@ -91,7 +91,7 @@
       padding: 6px 20px;
       display: inline-block;
       width: 100%;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid $white;
       box-sizing: border-box;
       font-size: 14px;
       font-weight: 600;
@@ -104,10 +104,6 @@
       }
     }
   }
-}
-
-.menuHome {
-
 }
 
 .responsiveMenuOpen .menu {
@@ -132,6 +128,10 @@
   padding: 5px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .logoItem {
