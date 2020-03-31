@@ -11,7 +11,9 @@ import '../styles/font-awesome.css';
 
 
 if (typeof window !== 'undefined') {
-  smoothScroll('a[href*="#"]');
+  smoothScroll('a[href*="#"]', {
+    header: '[data-scroll-header]',
+  });
 }
 
 const Layout = ({ children, header }) => (

@@ -119,10 +119,12 @@ const Header = ({ header }) => {
   }, []);
 
   return (
-    <div className={classNames({
-      [headerStyles.header]: true,
-      [headerStyles.responsiveMenuOpen]: isOpen,
-    })}
+    <div
+      className={classNames({
+        [headerStyles.header]: true,
+        [headerStyles.responsiveMenuOpen]: isOpen,
+      })}
+      data-scroll-header
     >
       <div className={headerStyles.container}>
         <div className={headerStyles.content}>
