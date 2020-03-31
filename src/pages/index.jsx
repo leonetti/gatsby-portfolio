@@ -72,9 +72,6 @@ export const pageQuery = graphql`
         }
       },
       photo {
-        file {
-          url
-        }
         fluid(maxWidth: 900) {
           ...GatsbyContentfulFluid
         }
