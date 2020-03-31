@@ -19,6 +19,8 @@ const IndexPage = ({ data }) => (
         designation: data.contentfulAboutMe.designation,
         bannerList: data.contentfulAboutMe.bannerList,
         bannerImage: data.contentfulAboutMe.bannerImage,
+        linkedin: data.contentfulAboutMe.linkedin,
+        github: data.contentfulAboutMe.github,
       }}
     />
     <About />
@@ -49,6 +51,8 @@ export const pageQuery = graphql`
     contentfulAboutMe {
       name
       designation
+      linkedin,
+      github,
       bannerList
       bannerImage {
         fluid(maxWidth: 1500) {

@@ -43,6 +43,28 @@ const Landing = ({ data }) => (
           <li key={shortId.generate()}>{item}</li>
         ))}
       </ul>
+      <ul className={landingStyles.social}>
+        <li>
+          <a
+            className="fab fa-linkedin-in"
+            href={data.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className={landingStyles.hidden}>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="fab fa-github"
+            href={data.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className={landingStyles.hidden}>GitHub</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 );
@@ -53,6 +75,8 @@ Landing.propTypes = {
     designation: PropTypes.string,
     bannerList: PropTypes.array,
     bannerImage: PropTypes.object,
+    linkedin: PropTypes.string,
+    github: PropTypes.string,
   }).isRequired,
 };
 

@@ -7,6 +7,7 @@ import Footer from './footer';
 
 import '../styles/reset.scss';
 import '../styles/common.scss';
+import '../styles/font-awesome.css';
 
 
 if (typeof window !== 'undefined') {

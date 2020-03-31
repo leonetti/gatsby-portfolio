@@ -353,7 +353,7 @@
         "id": "aboutMe",
         "type": "ContentType",
         "createdAt": "2020-03-29T02:35:12.158Z",
-        "updatedAt": "2020-03-29T02:35:13.014Z",
+        "updatedAt": "2020-03-31T07:51:21.560Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -361,8 +361,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:13.014Z",
+        "publishedVersion": 13,
+        "publishedAt": "2020-03-31T07:51:21.560Z",
         "firstPublishedAt": "2020-03-29T02:35:13.014Z",
         "createdBy": {
           "sys": {
@@ -378,8 +378,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 7,
+        "version": 14,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -511,56 +511,28 @@
           "omitted": false
         },
         {
-          "id": "facebook",
-          "name": "Facebook",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "twitter",
-          "name": "Twitter",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "instagram",
-          "name": "Instagram",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "linkdin",
-          "name": "Linkdin",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
           "id": "github",
           "name": "Github",
           "type": "Symbol",
           "localized": false,
           "required": false,
           "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "linkedin",
+          "name": "Linkedin",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-/]))?$"
+              }
+            }
           ],
           "disabled": false,
           "omitted": false
@@ -1029,7 +1001,7 @@
             "linkType": "Space"
           }
         },
-        "version": 2,
+        "version": 14,
         "createdAt": "2020-03-29T02:35:13.096Z",
         "createdBy": {
           "sys": {
@@ -1038,7 +1010,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-03-29T02:35:16.546Z",
+        "updatedAt": "2020-03-31T07:51:22.464Z",
         "updatedBy": {
           "sys": {
             "id": "7936xG1RBtwNYADjgD0U37",
@@ -1113,27 +1085,12 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "facebook",
-          "widgetId": "urlEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "twitter",
-          "widgetId": "urlEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "instagram",
-          "widgetId": "urlEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "linkdin",
-          "widgetId": "urlEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
           "fieldId": "github",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "linkedin",
           "widgetId": "urlEditor",
           "widgetNamespace": "builtin"
         }
@@ -1699,7 +1656,7 @@
         "id": "6caZg1KgLxQN4VE2QOJbCk",
         "type": "Entry",
         "createdAt": "2020-03-29T02:35:48.572Z",
-        "updatedAt": "2020-03-30T20:50:40.409Z",
+        "updatedAt": "2020-03-31T07:50:37.390Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1707,8 +1664,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 43,
-        "publishedAt": "2020-03-30T20:50:40.409Z",
+        "publishedVersion": 47,
+        "publishedAt": "2020-03-31T07:50:37.390Z",
         "firstPublishedAt": "2020-03-29T02:35:52.203Z",
         "createdBy": {
           "sys": {
@@ -1724,8 +1681,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 2,
-        "version": 44,
+        "publishedCounter": 3,
+        "version": 48,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1794,20 +1751,11 @@
         "gmail": {
           "en-US": "alexleonetti.dev@gmail.com"
         },
-        "facebook": {
-          "en-US": "#"
-        },
-        "twitter": {
-          "en-US": "#"
-        },
-        "instagram": {
-          "en-US": "#"
-        },
-        "linkdin": {
-          "en-US": "https://www.linkedin.com/in/alexanderleonetti/"
-        },
         "github": {
           "en-US": "https://github.com/leonetti"
+        },
+        "linkedin": {
+          "en-US": "https://www.linkedin.com/in/alexanderleonetti/"
         }
       }
     },
