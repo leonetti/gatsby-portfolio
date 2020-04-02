@@ -14,7 +14,7 @@ const Skills = ({ data }) => (
             key={skill.title}
           >
             <h2 className={skillsStyles.cardTitle}>{skill.title}</h2>
-            <p>{skill.description.description}</p>
+            <p className={skillsStyles.cardDescription}>{skill.description.description}</p>
           </div>
         ))}
       </div>
