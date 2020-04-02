@@ -11,8 +11,6 @@ const About = ({ data }) => (
     <div className={aboutStyles.container}>
       <Img
         fluid={data.photo.fluid}
-        objectFit="cover"
-        objectPosition="top center"
         className={aboutStyles.photo}
       />
       <section className={aboutStyles.content}>
