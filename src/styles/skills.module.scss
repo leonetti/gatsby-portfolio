@@ -1,0 +1,41 @@
+@import './mixins.scss';
+
+.wrapper {
+  @include section-wrapper;
+  background-color: $lightestGray;
+}
+
+.container {
+  @include section-container;
+}
+
+.skillList {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  @media only screen and (max-width:900px) {
+    flex-direction: column;
+  }
+
+}
+
+.heading {
+  @include section-header;
+}
+
+.card {
+  @include card-shadow-hover;
+
+  width: 30%;
+
+  @media only screen and (max-width:900px) {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.cardTitle {
+  font-size: 22px;
+  position: relative;
+}

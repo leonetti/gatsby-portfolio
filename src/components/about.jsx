@@ -8,48 +8,50 @@ import aboutStyles from '../styles/about.module.scss';
 
 const About = ({ data }) => (
   <div id="about" className={aboutStyles.wrapper}>
-    <Img
-      fluid={data.photo.fluid}
-      objectFit="cover"
-      objectPosition="top center"
-      className={aboutStyles.photo}
-    />
-    <section className={aboutStyles.content}>
-      <span className={aboutStyles.name}>{`My name is ${data.name}.`}</span>
-      <h2 className={aboutStyles.heading}>{`I'm a Professional ${data.designation}`}</h2>
-      <p className={aboutStyles.description}>{data.description}</p>
-      <ul className={aboutStyles.details}>
-        <li>
-          <strong>Full Name</strong>
-          <p>{data.name}</p>
-        </li>
-        <li>
-          <strong>Age</strong>
-          <p>
-            {data.age}
-            {' '}
-            Years
-          </p>
-        </li>
-        <li>
-          <strong>Location</strong>
-          <p>{data.location}</p>
-        </li>
-        <li>
-          <strong>Email</strong>
-          <p>
-            <a target="_blank" rel="noopener noreferrer" href={`mailto:${data.gmail}`}>{data.gmail}</a>
-          </p>
-        </li>
-      </ul>
-      <Social
-        data={{
-          page: 'about',
-          linkedin: data.linkedin,
-          github: data.github,
-        }}
+    <div className={aboutStyles.container}>
+      <Img
+        fluid={data.photo.fluid}
+        objectFit="cover"
+        objectPosition="top center"
+        className={aboutStyles.photo}
       />
-    </section>
+      <section className={aboutStyles.content}>
+        <span className={aboutStyles.name}>{`My name is ${data.name}.`}</span>
+        <h2 className={aboutStyles.heading}>{`I'm a Professional ${data.designation}`}</h2>
+        <p className={aboutStyles.description}>{data.description}</p>
+        <ul className={aboutStyles.details}>
+          <li>
+            <strong>Full Name</strong>
+            <p>{data.name}</p>
+          </li>
+          <li>
+            <strong>Age</strong>
+            <p>
+              {data.age}
+              {' '}
+              Years
+            </p>
+          </li>
+          <li>
+            <strong>Location</strong>
+            <p>{data.location}</p>
+          </li>
+          <li>
+            <strong>Email</strong>
+            <p>
+              <a target="_blank" rel="noopener noreferrer" href={`mailto:${data.gmail}`}>{data.gmail}</a>
+            </p>
+          </li>
+        </ul>
+        <Social
+          data={{
+            page: 'about',
+            linkedin: data.linkedin,
+            github: data.github,
+          }}
+        />
+      </section>
+    </div>
   </div>
 );
 

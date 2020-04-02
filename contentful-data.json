@@ -12,7 +12,7 @@
         "id": "service",
         "type": "ContentType",
         "createdAt": "2020-03-29T02:35:12.137Z",
-        "updatedAt": "2020-03-30T19:56:03.458Z",
+        "updatedAt": "2020-04-02T06:54:10.660Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2020-03-30T19:56:03.458Z",
+        "publishedVersion": 9,
+        "publishedAt": "2020-04-02T06:54:10.660Z",
         "firstPublishedAt": "2020-03-29T02:35:15.869Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 5,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -750,7 +750,7 @@
             "linkType": "Space"
           }
         },
-        "version": 4,
+        "version": 10,
         "createdAt": "2020-03-29T02:35:15.930Z",
         "createdBy": {
           "sys": {
@@ -759,7 +759,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-03-30T19:56:03.998Z",
+        "updatedAt": "2020-04-02T06:54:11.032Z",
         "updatedBy": {
           "sys": {
             "id": "7936xG1RBtwNYADjgD0U37",
@@ -1222,10 +1222,10 @@
             "id": "xckcqgv0vy98"
           }
         },
-        "id": "6caZg1KgLxQN4VE2QOJbCk",
+        "id": "3ESYbkZtWyPnPy6nDQFAHg",
         "type": "Entry",
-        "createdAt": "2020-03-29T02:35:48.572Z",
-        "updatedAt": "2020-03-31T10:24:43.831Z",
+        "createdAt": "2020-03-29T02:35:48.157Z",
+        "updatedAt": "2020-04-02T08:44:42.154Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1233,9 +1233,135 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 122,
-        "publishedAt": "2020-03-31T10:24:43.831Z",
-        "firstPublishedAt": "2020-03-29T02:35:52.203Z",
+        "publishedVersion": 204,
+        "publishedAt": "2020-04-02T08:44:42.154Z",
+        "firstPublishedAt": "2020-03-29T02:35:51.746Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 205,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "service"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "CSS"
+        },
+        "description": {
+          "en-US": "Cascading Style Sheets allow us to to serve a better and prettier user experience. I am a fan of preprocessors such as SASS and LESS as they allow for reusable variables and mixins, giving any site a more consistent feel."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "2MEkguSekmXg1wtgqfEaXV",
+        "type": "Entry",
+        "createdAt": "2020-03-29T02:35:48.246Z",
+        "updatedAt": "2020-04-02T07:50:37.911Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 145,
+        "publishedAt": "2020-04-02T07:50:37.911Z",
+        "firstPublishedAt": "2020-03-29T02:36:01.009Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 146,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "service"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HTML"
+        },
+        "description": {
+          "en-US": "The barebones for any website, well written semantic HTML is important and allows for better accessiblity to all users. I pick HTML elements based on their semantic meaning rather than visual presentation."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "5rrD15RhF8dMqpeLktOozn",
+        "type": "Entry",
+        "createdAt": "2020-03-29T02:35:48.256Z",
+        "updatedAt": "2020-04-02T08:44:08.922Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 193,
+        "publishedAt": "2020-04-02T08:44:08.922Z",
+        "firstPublishedAt": "2020-03-29T02:36:00.571Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1251,7 +1377,70 @@
           }
         },
         "publishedCounter": 6,
-        "version": 123,
+        "version": 194,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "service"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Javascript"
+        },
+        "description": {
+          "en-US": "Javascript is fundamental for single page applications and dynamic components. MVC design patterns in the past helped us achieve this, and with newer frameworks like React, it is easier than ever to create dynamic functioning websites."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "6caZg1KgLxQN4VE2QOJbCk",
+        "type": "Entry",
+        "createdAt": "2020-03-29T02:35:48.572Z",
+        "updatedAt": "2020-04-02T05:17:52.913Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 129,
+        "publishedAt": "2020-04-02T05:17:52.913Z",
+        "firstPublishedAt": "2020-03-29T02:35:52.203Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 130,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1300,9 +1489,9 @@
         },
         "bannerList": {
           "en-US": [
-            "HTML",
-            "CSS",
-            "JAVASCRIPT"
+            "design",
+            "develop",
+            "create"
           ]
         },
         "location": {

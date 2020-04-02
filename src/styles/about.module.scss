@@ -12,20 +12,13 @@
   }
 }
 
-// .avatar {
-//   display: none;
-//   width: 300px;
-//   margin: 0 auto 20px;
-
-//   @media only screen and (max-width:900px) {
-//     display: block;
-//   }
-// }
-
 .wrapper {
-  padding: 50px 20px;
-  max-width: 960px;
-  margin: 0 auto;
+  @include section-wrapper;
+}
+
+.container {
+  @include section-container;
+  
   display: flex;
   justify-content: space-between;
 
@@ -48,20 +41,7 @@
 }
 
 .heading {
-  margin-bottom: 10px;
-  display: block;
-  position: relative;
-
-  &:after {
-    content: "";
-    width: 25px;
-    height: 1px;
-    display: inline-block;
-    position: absolute;
-    background: $orange;
-    top: 100%;
-    left: 0;
-  }
+  @include section-header;
 }
 
 .description {

@@ -6,10 +6,10 @@ import Layout from '../components/layout';
 import Landing from '../components/landing';
 import About from '../components/about';
 import Skills from '../components/skills';
-import Blogs from '../components/blogs';
-import Work from '../components/work';
-import Testimonials from '../components/testimonials';
-import Contact from '../components/contact';
+// import Blogs from '../components/blogs';
+// import Work from '../components/work';
+// import Testimonials from '../components/testimonials';
+// import Contact from '../components/contact';
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -36,23 +36,27 @@ const IndexPage = ({ data }) => (
         github: data.contentfulAboutMe.github,
       }}
     />
-    <Skills />
-    <Blogs />
+    <Skills
+      data={data.allContentfulSkills}
+    />
+    {/* <Blogs />
     <Work />
     <Testimonials />
-    <Contact />
+    <Contact /> */}
   </Layout>
 );
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     contentfulAboutMe: PropTypes.object,
+    allContentfulSkills: PropTypes.object,
   }),
 };
 
 IndexPage.defaultProps = {
   data: {
     contentfulAboutMe: {},
+    allContentfulSkills: {},
   },
 };
 
@@ -82,6 +86,18 @@ export const pageQuery = graphql`
       age,
       location,
       gmail,
+    }
+    allContentfulSkills(sort: {
+      fields: [createdAt],
+      order: DESC
+    }) {
+      nodes {
+        title,
+        createdAt,
+        description {
+          description
+        }
+      }
     }
   }
 `;
