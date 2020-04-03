@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import smoothScroll from 'smooth-scroll';
+import SmoothScroll from 'smooth-scroll';
 
 import Header from './header';
 import Footer from './footer';
@@ -9,22 +9,37 @@ import '../styles/reset.scss';
 import '../styles/common.scss';
 import '../styles/font-awesome.css';
 
+import getAnchor from '../helpers/scroll-anchor';
 
-if (typeof window !== 'undefined') {
-  smoothScroll('a[href*="#"]', {
-    header: '[data-scroll-header]',
-  });
-}
 
-const Layout = ({ children, header }) => (
-  <>
-    <Header header={header} />
-    <div>
-      <main id="home">{children}</main>
-    </div>
-    <Footer />
-  </>
-);
+const Layout = ({ children, header }) => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const scroll = new SmoothScroll('a[href*="#"]', {
+        header: '[data-scroll-header]',
+      });
+
+      // scrolls to anchor on load
+      const anchor = getAnchor();
+      if (anchor) {
+        const element = global.window.document.querySelector(anchor);
+
+        if (element) {
+          scroll.animateScroll(element);
+        }
+      }
+    }
+  }, []);
+  return (
+    <>
+      <Header header={header} />
+      <div>
+        <main id="home">{children}</main>
+      </div>
+      <Footer />
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
