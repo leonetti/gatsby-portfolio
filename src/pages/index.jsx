@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import Landing from '../components/landing';
 import About from '../components/about';
 import Skills from '../components/skills';
-// import Blogs from '../components/blogs';
+import Blogs from '../components/blogs';
 // import Work from '../components/work';
 // import Testimonials from '../components/testimonials';
 // import Contact from '../components/contact';
@@ -39,10 +39,12 @@ const IndexPage = ({ data }) => (
     <Skills
       data={data.allContentfulSkills}
     />
-    {/* <Blogs />
-    <Work />
-    <Testimonials />
-    <Contact /> */}
+    <Blogs
+      data={data.allContentfulBlogs}
+    />
+    {/* <Work /> */}
+    {/* <Testimonials /> */}
+    {/* <Contact /> */}
   </Layout>
 );
 
@@ -50,14 +52,8 @@ IndexPage.propTypes = {
   data: PropTypes.shape({
     contentfulAboutMe: PropTypes.object,
     allContentfulSkills: PropTypes.object,
-  }),
-};
-
-IndexPage.defaultProps = {
-  data: {
-    contentfulAboutMe: {},
-    allContentfulSkills: {},
-  },
+    allContentfulBlogs: PropTypes.object,
+  }).isRequired,
 };
 
 export default IndexPage;
@@ -100,17 +96,15 @@ export const pageQuery = graphql`
       }
     }
     allContentfulBlogs(limit: 5) {
-      edges {
-        node {
-          title
-          slug
-          featureImage {
-            fluid(maxWidth: 600) {
-              ...GatsbyContentfulFluid
-            }
+      nodes {
+        title
+        slug
+        featureImage {
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid
           }
-          createdAt
         }
+        createdAt(formatString:"dddd MMM DD, YYYY")
       }
     }
   }
