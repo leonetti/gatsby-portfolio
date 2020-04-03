@@ -12,15 +12,18 @@ import '../styles/font-awesome.css';
 import { scrollToAnchor } from '../helpers/scroll-anchor';
 
 
+let smoothScrollInstance;
+
+if (typeof window !== 'undefined') {
+  smoothScrollInstance = new SmoothScroll('a[href*="#"]', {
+    header: '[data-scroll-header]',
+  });
+}
+
 const Layout = ({ children, header }) => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const scroll = new SmoothScroll('a[href*="#"]', {
-        header: '[data-scroll-header]',
-      });
-
-      // scrolls to anchor on load
-      scrollToAnchor(scroll);
+      scrollToAnchor(smoothScrollInstance);
     }
   }, []);
   return (
