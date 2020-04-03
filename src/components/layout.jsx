@@ -9,7 +9,7 @@ import '../styles/reset.scss';
 import '../styles/common.scss';
 import '../styles/font-awesome.css';
 
-import getAnchor from '../helpers/scroll-anchor';
+import { scrollToAnchor } from '../helpers/scroll-anchor';
 
 
 const Layout = ({ children, header }) => {
@@ -20,14 +20,7 @@ const Layout = ({ children, header }) => {
       });
 
       // scrolls to anchor on load
-      const anchor = getAnchor();
-      if (anchor) {
-        const element = global.window.document.querySelector(anchor);
-
-        if (element) {
-          scroll.animateScroll(element);
-        }
-      }
+      scrollToAnchor(scroll);
     }
   }, []);
   return (

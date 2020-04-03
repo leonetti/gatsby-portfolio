@@ -99,5 +99,19 @@ export const pageQuery = graphql`
         }
       }
     }
+    allContentfulBlogs(limit: 5) {
+      edges {
+        node {
+          title
+          slug
+          featureImage {
+            fluid(maxWidth: 600) {
+              ...GatsbyContentfulFluid
+            }
+          }
+          createdAt
+        }
+      }
+    }
   }
 `;
