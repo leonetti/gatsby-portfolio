@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { motion } from 'framer-motion';
 
 import headerStyles from '../styles/header.module.scss';
@@ -129,7 +129,7 @@ const Header = ({ header }) => {
       <div className={headerStyles.container}>
         <div className={headerStyles.content}>
           <div className={headerStyles.logoContainer}>
-            <Link to={header === 'home' ? '/#home' : '/'} onClick={() => setIsOpen(false)}>
+            <AnchorLink to="/#home" onClick={() => setIsOpen(false)}>
               <motion.div
                 className={headerStyles.logoBox}
                 variants={container}
@@ -144,7 +144,7 @@ const Header = ({ header }) => {
                   <Icon />
                 </motion.div>
               </motion.div>
-            </Link>
+            </AnchorLink>
           </div>
           <motion.div
             className={headerStyles.menuToggle}
@@ -163,31 +163,31 @@ const Header = ({ header }) => {
           >
             <ul>
               <li>
-                <Link onClick={() => setIsOpen(false)} to={header === 'home' ? '/#home' : '/'}>Home</Link>
+                <AnchorLink onClick={() => setIsOpen(false)} to="/#home">Home</AnchorLink>
               </li>
               {header === 'home' && (
                 <>
                   <li>
-                    <Link onClick={() => setIsOpen(false)} to="/#about">About</Link>
+                    <AnchorLink onClick={() => setIsOpen(false)} to="/#about">About</AnchorLink>
                   </li>
                   <li>
-                    <Link onClick={() => setIsOpen(false)} to="/#skills">Skills</Link>
+                    <AnchorLink onClick={() => setIsOpen(false)} to="/#skills">Skills</AnchorLink>
                   </li>
                 </>
               )}
               <li>
-                <Link onClick={() => setIsOpen(false)} to={header === 'home' ? '/#blogs' : '/blogs'}>Blogs</Link>
+                <AnchorLink onClick={() => setIsOpen(false)} to={header === 'home' ? '/#blogs' : '/blogs#home'}>Blogs</AnchorLink>
               </li>
               {header === 'home' && (
                 <>
                   <li>
-                    <Link onClick={() => setIsOpen(false)} to="/#work">Work</Link>
+                    <AnchorLink onClick={() => setIsOpen(false)} to="/#work">Work</AnchorLink>
                   </li>
                   <li>
-                    <Link onClick={() => setIsOpen(false)} to="/#testimonials">Testimonials</Link>
+                    <AnchorLink onClick={() => setIsOpen(false)} to="/#testimonials">Testimonials</AnchorLink>
                   </li>
                   <li>
-                    <Link onClick={() => setIsOpen(false)} to="/#contact">Contact</Link>
+                    <AnchorLink onClick={() => setIsOpen(false)} to="/#contact">Contact</AnchorLink>
                   </li>
                 </>
               )}

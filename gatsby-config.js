@@ -25,6 +25,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: -80,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-eslint',
       loader: 'eslint-loader',
       options: {
