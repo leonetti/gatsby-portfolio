@@ -131,21 +131,23 @@ const Header = ({ header }) => {
       <div className={headerStyles.container}>
         <div className={headerStyles.content}>
           <div className={headerStyles.logoContainer}>
-            <LinkVariant to={header === 'home' ? '/#home' : '/'} onClick={() => setIsOpen(false)}>
-              <motion.div
-                className={headerStyles.logoBox}
-                variants={container}
-                initial={initialLoad ? 'hidden' : 'visible'}
-                animate="visible"
-              >
+            <LinkVariant to={header === 'home' ? '/#home' : '/'}>
+              <button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>
                 <motion.div
-                  variants={icon}
-                  whileHover={{ scale: 1.7 }}
-                  whileTap={{ scale: 1.6 }}
+                  className={headerStyles.logoBox}
+                  variants={container}
+                  initial={initialLoad ? 'hidden' : 'visible'}
+                  animate="visible"
                 >
-                  <Icon />
+                  <motion.div
+                    variants={icon}
+                    whileHover={{ scale: 1.7 }}
+                    whileTap={{ scale: 1.6 }}
+                  >
+                    <Icon />
+                  </motion.div>
                 </motion.div>
-              </motion.div>
+              </button>
             </LinkVariant>
           </div>
           <motion.div
@@ -165,31 +167,31 @@ const Header = ({ header }) => {
           >
             <ul>
               <li>
-                <LinkVariant onClick={() => setIsOpen(false)} to={header === 'home' ? '/#home' : '/'}>Home</LinkVariant>
+                <LinkVariant to={header === 'home' ? '/#home' : '/'}><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Home</button></LinkVariant>
               </li>
               {header === 'home' && (
                 <>
                   <li>
-                    <AnchorLink onClick={() => setIsOpen(false)} to="/#about">About</AnchorLink>
+                    <AnchorLink to="/#about"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>About</button></AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink onClick={() => setIsOpen(false)} to="/#skills">Skills</AnchorLink>
+                    <AnchorLink to="/#skills"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Skills</button></AnchorLink>
                   </li>
                 </>
               )}
               <li>
-                <LinkVariant onClick={() => setIsOpen(false)} to={header === 'home' ? '/#blogs' : '/blogs'}>Blogs</LinkVariant>
+                <LinkVariant to={header === 'home' ? '/#blogs' : '/blogs'}><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Blogs</button></LinkVariant>
               </li>
               {header === 'home' && (
                 <>
                   <li>
-                    <AnchorLink onClick={() => setIsOpen(false)} to="/#work">Work</AnchorLink>
+                    <AnchorLink to="/#work"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Work</button></AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink onClick={() => setIsOpen(false)} to="/#testimonials">Testimonials</AnchorLink>
+                    <AnchorLink to="/#testimonials"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Testimonials</button></AnchorLink>
                   </li>
                   <li>
-                    <AnchorLink onClick={() => setIsOpen(false)} to="/#contact">Contact</AnchorLink>
+                    <AnchorLink to="/#contact"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Contact</button></AnchorLink>
                   </li>
                 </>
               )}
