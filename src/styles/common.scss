@@ -3,3 +3,9 @@
 * {
   font-family:'Josefin Sans',sans-serif
 }
+
+.using-mouse {
+  button, input, textarea {
+    outline: none;
+  }
+}
