@@ -33,6 +33,7 @@
   @media only screen and (max-width:767px) {
     position: fixed;
     top: 0;
+    visibility: hidden;
     right: -100%;
     bottom: 0;
     width: 100%;
@@ -40,7 +41,7 @@
     background: rgba(0, 0, 0, 0.8);
     z-index: 999;
     padding: 80px 0 0;
-    transition: right .3s;
+    transition: all .3s;
   }
 
   ul {
@@ -109,6 +110,7 @@
 .responsiveMenuOpen .menu {
   @media only screen and (max-width:767px) {
     right: 0;
+    visibility: visible;
   }
 }
 
