@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { Link } from 'gatsby';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { motion } from 'framer-motion';
 
@@ -113,6 +114,7 @@ const Header = ({ header }) => {
   const containerRef = useRef(null);
   const menuRef = useRef(null);
 
+  const LinkVariant = header === 'home' ? AnchorLink : Link;
 
   useEffect(() => {
     initialLoad = false;
@@ -129,7 +131,7 @@ const Header = ({ header }) => {
       <div className={headerStyles.container}>
         <div className={headerStyles.content}>
           <div className={headerStyles.logoContainer}>
-            <AnchorLink to="/#home" onClick={() => setIsOpen(false)}>
+            <LinkVariant to={header === 'home' ? '/#home' : '/'} onClick={() => setIsOpen(false)}>
               <motion.div
                 className={headerStyles.logoBox}
                 variants={container}
@@ -144,7 +146,7 @@ const Header = ({ header }) => {
                   <Icon />
                 </motion.div>
               </motion.div>
-            </AnchorLink>
+            </LinkVariant>
           </div>
           <motion.div
             className={headerStyles.menuToggle}
@@ -163,7 +165,7 @@ const Header = ({ header }) => {
           >
             <ul>
               <li>
-                <AnchorLink onClick={() => setIsOpen(false)} to="/#home">Home</AnchorLink>
+                <LinkVariant onClick={() => setIsOpen(false)} to={header === 'home' ? '/#home' : '/'}>Home</LinkVariant>
               </li>
               {header === 'home' && (
                 <>
@@ -176,7 +178,7 @@ const Header = ({ header }) => {
                 </>
               )}
               <li>
-                <AnchorLink onClick={() => setIsOpen(false)} to={header === 'home' ? '/#blogs' : '/blogs#home'}>Blogs</AnchorLink>
+                <LinkVariant onClick={() => setIsOpen(false)} to={header === 'home' ? '/#blogs' : '/blogs'}>Blogs</LinkVariant>
               </li>
               {header === 'home' && (
                 <>
