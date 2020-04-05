@@ -6,12 +6,18 @@ import { graphql, Link } from 'gatsby';
 import shortId from 'shortid';
 import classNames from 'classnames';
 
+import { DiscussionEmbed } from 'disqus-react';
 import Layout from '../components/layout';
 
 import blogStyles from '../styles/blog.module.scss';
 
 const Blog = ({ data }) => {
   const blog = data.contentfulBlogs;
+  const disqusShortname = 'alexleonetti';
+  const disqusConfig = {
+    identifier: blog.id,
+    title: blog.title,
+  };
   return (
     <Layout>
       <div id="blog" className={blogStyles.wrapper}>
@@ -35,6 +41,10 @@ const Blog = ({ data }) => {
               dangerouslySetInnerHTML={{
                 __html: blog.description.childMarkdownRemark.html,
               }}
+            />
+            <DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
             />
           </div>
           <div className={blogStyles.featuredBlogs}>
