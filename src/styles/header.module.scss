@@ -69,23 +69,7 @@
   }
 
   a {
-    text-decoration: none;
-    position: relative;
-
-    &:hover:after {
-      width: 100%;
-    }
-
-    &:after {
-      content: "";
-      width: 0;
-      height: 1px;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      background: $white;  
-      transition: width 0.4s;
-    }
+    @include link;
 
     @media screen and (max-width:767px) {
       display: inline-block;

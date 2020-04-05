@@ -1,8 +1,10 @@
 /* eslint-disable react/no-danger */
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import shortId from 'shortid';
+import classNames from 'classnames';
 
 import Layout from '../components/layout';
 
@@ -14,16 +16,33 @@ const Blog = ({ data }) => {
     <Layout>
       <div id="blog" className={blogStyles.wrapper}>
         <div className={blogStyles.container}>
-          <Img
-            fluid={blog.featureImage.fluid}
-            className={blogStyles.titlePhoto}
-          />
-          <h1>{blog.title}</h1>
-          <p>{blog.createdAt}</p>
-          <div dangerouslySetInnerHTML={{
-            __html: blog.description.childMarkdownRemark.html,
-          }}
-          />
+          <div className={blogStyles.content}>
+            <Img
+              fluid={blog.featureImage.fluid}
+              className={blogStyles.titlePhoto}
+            />
+            <h1>{blog.title}</h1>
+            <span className={classNames({
+              'fa fa-calendar-alt': true,
+              [blogStyles.calendarIcon]: true,
+            })}
+            />
+            <time>{blog.createdAt}</time>
+            <div dangerouslySetInnerHTML={{
+              __html: blog.description.childMarkdownRemark.html,
+            }}
+            />
+          </div>
+          <div className={blogStyles.featuredBlogs}>
+            <h3 className={blogStyles.featuredTitle}>Recent Blogs</h3>
+            {data.allContentfulBlogs.nodes.map((node) => (
+              <Fragment key={shortId.generate()}>
+                {node.id !== blog.id && (
+                  <Link to={`/${node.slug}`}>{node.title}</Link>
+                )}
+              </Fragment>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -34,6 +53,7 @@ const Blog = ({ data }) => {
 Blog.propTypes = {
   data: PropTypes.shape({
     contentfulBlogs: PropTypes.object,
+    allContentfulBlogs: PropTypes.object,
   }).isRequired,
 };
 
@@ -54,6 +74,13 @@ export const pageQuery = graphql`
         }
       }
       createdAt(formatString:"MMM DD, YYYY")
+    }
+    allContentfulBlogs(sort: { fields: createdAt, order: DESC }, limit: 10) {
+      nodes {
+        title
+        slug
+        id
+      }
     }
   }
 `;

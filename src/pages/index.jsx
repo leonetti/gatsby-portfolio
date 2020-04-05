@@ -73,7 +73,7 @@ export const pageQuery = graphql`
       },
       photo {
         fluid(maxWidth: 900) {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp
         }
       },
       description {
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
         slug
         featureImage {
           fluid(maxWidth: 600) {
-            ...GatsbyContentfulFluid
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         createdAt(formatString:"MMM DD, YYYY")
