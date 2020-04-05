@@ -20,6 +20,7 @@
 
 .titlePhoto {
   height: 400px;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 767px) {
     height: 300px;
@@ -28,6 +29,7 @@
 
 .featuredBlogs {
   min-width: 150px;
+  width: 150px;
   margin-left: 20px;
 
   a {
@@ -36,8 +38,8 @@
     @include truncate-text;
 
     color: $medGray;
-    transition: color 0.5s;
-    margin-bottom: 5px;
+    transition: color 0.3s;
+    margin-bottom: 7px;
 
     &:hover {
       color: $orange;
@@ -49,6 +51,17 @@
   }
 }
 
+.title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
 .featuredTitle {
   font-weight: 500;
 }
@@ -58,3 +71,21 @@
   margin-right: 5px;
   font-size: 14px;
 }
+
+.contentfulContent {
+  h2 {
+    @include section-header;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+.content {
+  width: 100%;
+}
+

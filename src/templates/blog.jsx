@@ -21,16 +21,20 @@ const Blog = ({ data }) => {
               fluid={blog.featureImage.fluid}
               className={blogStyles.titlePhoto}
             />
-            <h1>{blog.title}</h1>
-            <span className={classNames({
-              'fa fa-calendar-alt': true,
-              [blogStyles.calendarIcon]: true,
-            })}
-            />
-            <time>{blog.createdAt}</time>
-            <div dangerouslySetInnerHTML={{
-              __html: blog.description.childMarkdownRemark.html,
-            }}
+            <h1 className={blogStyles.title}>{blog.title}</h1>
+            <div className={blogStyles.date}>
+              <span className={classNames({
+                'fa fa-calendar-alt': true,
+                [blogStyles.calendarIcon]: true,
+              })}
+              />
+              <time>{blog.createdAt}</time>
+            </div>
+            <div
+              className={blogStyles.contentfulContent}
+              dangerouslySetInnerHTML={{
+                __html: blog.description.childMarkdownRemark.html,
+              }}
             />
           </div>
           <div className={blogStyles.featuredBlogs}>
