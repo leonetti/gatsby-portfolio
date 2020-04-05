@@ -1,0 +1,21 @@
+@import './mixins.scss';
+
+.wrapper {
+  @include section-wrapper;
+  // puts footer at bottom if blog is short
+  min-height: calc(100vh - 66px);
+  margin-top: 83px;
+  padding-top: 20px;
+}
+
+.container {
+  @include section-container;
+}
+
+.titlePhoto {
+  height: 400px;
+
+  @media screen and (max-width: 767px) {
+    height: 300px;
+  }
+}

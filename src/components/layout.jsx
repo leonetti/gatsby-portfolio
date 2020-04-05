@@ -12,7 +12,7 @@ const Layout = ({ children, header }) => (
   <>
     <Header header={header} />
     <div>
-      <main id="home">{children}</main>
+      <main id="main">{children}</main>
     </div>
     <Footer />
   </>

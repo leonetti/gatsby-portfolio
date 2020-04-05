@@ -88,7 +88,6 @@
     }
 
     @media screen and (max-width:767px) {
-      padding: 6px 20px;
       display: inline-block;
       width: 100%;
       border-bottom: 1px solid $white;
@@ -112,6 +111,10 @@
     cursor: pointer;
     border: none;
     padding: 0;
+
+    @media screen and (max-width:767px) {
+      padding: 6px 20px;
+    }
   }
 }
 
@@ -163,6 +166,7 @@
 
 .menuToggle {
   z-index: 9999;
+  margin-top: 5px;
   display: none;
   @media only screen and (max-width:767px) {
     display: block;

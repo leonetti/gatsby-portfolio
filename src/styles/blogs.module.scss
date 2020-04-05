@@ -11,3 +11,101 @@
 .heading {
   @include section-header;
 }
+
+.blogsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.blog {
+  list-style: none;
+  width: calc(33.33% - 5px);
+  height: 250px;
+  position: relative;
+  margin-bottom: 10px;
+
+  @media screen and (max-width:767px) {
+    width: calc(50% - 5px);
+    height: 200px;
+  }
+
+  @media screen and (max-width:475px) {
+    width: 100%;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    width: calc(50% - 5px);
+    height: 300px;
+
+    @media screen and (max-width:767px) {
+      height: 200px;
+    }
+
+    @media screen and (max-width:475px) {
+      width: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.blogLink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.blogInfo {
+  position: absolute;
+  color: $white;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.title {
+  @include text-shadow;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.calendarIcon {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.date {
+  @include text-shadow;
+  font-size: 14px;
+}
+
+.inner {
+  height: 100%;
+
+  img {
+    // important needed here
+    transition: all 0.3s !important;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.imageWrapper {
+  height: 100%;
+}

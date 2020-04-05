@@ -68,7 +68,7 @@ export const pageQuery = graphql`
       bannerList,
       bannerImage {
         fluid(maxWidth: 1500) {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_tracedSVG
         }
       },
       photo {
@@ -95,7 +95,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulBlogs(limit: 5) {
+    allContentfulBlogs(sort: { fields: createdAt, order: DESC }, limit: 5) {
       nodes {
         title
         slug
@@ -104,7 +104,7 @@ export const pageQuery = graphql`
             ...GatsbyContentfulFluid
           }
         }
-        createdAt(formatString:"dddd MMM DD, YYYY")
+        createdAt(formatString:"MMM DD, YYYY")
       }
     }
   }

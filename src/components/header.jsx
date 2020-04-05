@@ -1,4 +1,5 @@
-/* eslint-disable max-len */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -131,7 +132,7 @@ const Header = ({ header }) => {
       <div className={headerStyles.container}>
         <div className={headerStyles.content}>
           <div className={headerStyles.logoContainer}>
-            <LinkVariant to={header === 'home' ? '/#home' : '/'}>
+            <LinkVariant to={header === 'home' ? '/#main' : '/'}>
               <button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>
                 <motion.div
                   className={headerStyles.logoBox}
@@ -166,31 +167,31 @@ const Header = ({ header }) => {
             className={headerStyles.menu}
           >
             <ul>
-              <li>
-                <LinkVariant to={header === 'home' ? '/#home' : '/'}><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Home</button></LinkVariant>
+              <li onKeyPress={() => setIsOpen(false)}>
+                <LinkVariant to={header === 'home' ? '/#main' : '/'}><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Home</button></LinkVariant>
               </li>
               {header === 'home' && (
                 <>
-                  <li>
+                  <li onKeyPress={() => setIsOpen(false)}>
                     <AnchorLink to="/#about"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>About</button></AnchorLink>
                   </li>
-                  <li>
+                  <li onKeyPress={() => setIsOpen(false)}>
                     <AnchorLink to="/#skills"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Skills</button></AnchorLink>
                   </li>
                 </>
               )}
-              <li>
+              <li onKeyPress={() => setIsOpen(false)}>
                 <LinkVariant to={header === 'home' ? '/#blogs' : '/blogs'}><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Blogs</button></LinkVariant>
               </li>
               {header === 'home' && (
                 <>
-                  <li>
+                  <li onKeyPress={() => setIsOpen(false)}>
                     <AnchorLink to="/#work"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Work</button></AnchorLink>
                   </li>
-                  <li>
+                  <li onKeyPress={() => setIsOpen(false)}>
                     <AnchorLink to="/#testimonials"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Testimonials</button></AnchorLink>
                   </li>
-                  <li>
+                  <li onKeyPress={() => setIsOpen(false)}>
                     <AnchorLink to="/#contact"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Contact</button></AnchorLink>
                   </li>
                 </>
