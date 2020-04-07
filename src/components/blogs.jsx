@@ -7,7 +7,7 @@ import classNames from 'classnames';
 
 import blogsStyles from '../styles/blogs.module.scss';
 
-const Blogs = ({ data }) => (
+const Blogs = ({ data, blogsPage }) => (
   <div id="blogs" className={blogsStyles.wrapper}>
     <div className={blogsStyles.container}>
       <h2 className={blogsStyles.heading}>Blogs</h2>
@@ -35,9 +35,11 @@ const Blogs = ({ data }) => (
         ))}
       </ul>
 
-      <Link to="/blogs">
-        <span>More Blogs</span>
-      </Link>
+      {(!blogsPage && data.nodes.length >= 5) && (
+        <Link to="/blogs">
+          <span>More Blogs</span>
+        </Link>
+      )}
     </div>
   </div>
 );
@@ -46,6 +48,11 @@ Blogs.propTypes = {
   data: PropTypes.shape({
     nodes: PropTypes.array,
   }).isRequired,
+  blogsPage: PropTypes.bool,
+};
+
+Blogs.defaultProps = {
+  blogsPage: false,
 };
 
 export default Blogs;
