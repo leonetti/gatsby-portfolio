@@ -87,7 +87,7 @@
         "id": "blogs",
         "type": "ContentType",
         "createdAt": "2020-03-29T02:35:12.141Z",
-        "updatedAt": "2020-03-29T02:35:15.372Z",
+        "updatedAt": "2020-04-05T01:06:57.143Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -95,8 +95,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2020-03-29T02:35:15.372Z",
+        "publishedVersion": 5,
+        "publishedAt": "2020-04-05T01:06:57.143Z",
         "firstPublishedAt": "2020-03-29T02:35:15.372Z",
         "createdBy": {
           "sys": {
@@ -112,8 +112,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -144,6 +144,9 @@
           "localized": false,
           "required": true,
           "validations": [
+            {
+              "unique": true
+            }
           ],
           "disabled": false,
           "omitted": false
@@ -153,7 +156,7 @@
           "name": "Feature Image",
           "type": "Link",
           "localized": false,
-          "required": false,
+          "required": true,
           "validations": [
           ],
           "disabled": false,
@@ -806,7 +809,7 @@
             "linkType": "Space"
           }
         },
-        "version": 2,
+        "version": 6,
         "createdAt": "2020-03-29T02:35:15.540Z",
         "createdBy": {
           "sys": {
@@ -815,7 +818,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-03-29T02:35:16.542Z",
+        "updatedAt": "2020-04-05T01:06:57.775Z",
         "updatedBy": {
           "sys": {
             "id": "7936xG1RBtwNYADjgD0U37",
@@ -1517,10 +1520,10 @@
             "id": "xckcqgv0vy98"
           }
         },
-        "id": "kvdWcngcAWfKNWbU8TMeL",
+        "id": "7G9NiZUOWz4L8PXQOl1N25",
         "type": "Entry",
-        "createdAt": "2020-03-29T02:35:51.219Z",
-        "updatedAt": "2020-04-03T21:31:27.004Z",
+        "createdAt": "2020-04-05T08:59:51.159Z",
+        "updatedAt": "2020-04-05T10:12:05.178Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1528,9 +1531,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2020-04-03T21:31:27.004Z",
-        "firstPublishedAt": "2020-03-29T02:35:57.302Z",
+        "publishedVersion": 378,
+        "publishedAt": "2020-04-05T10:12:05.178Z",
+        "firstPublishedAt": "2020-04-05T09:38:39.291Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1546,7 +1549,7 @@
           }
         },
         "publishedCounter": 2,
-        "version": 4,
+        "version": 379,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1564,97 +1567,22 @@
       },
       "fields": {
         "title": {
-          "en-US": "Blog Title 2"
+          "en-US": "Create Responsive Navigation in React"
         },
         "slug": {
-          "en-US": "blog-title-2"
+          "en-US": "create-responsive-navigation-in-react"
         },
         "featureImage": {
           "en-US": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "3GzB8VwODxcATgqYrZLXcA"
+              "id": "2pWwV0ZZwNNnZ0CZCbLX1S"
             }
           }
         },
         "description": {
-          "en-US": "## What is Lorem Ipsum?\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xckcqgv0vy98"
-          }
-        },
-        "id": "6dPFHmvvwRLTmishla3Y55",
-        "type": "Entry",
-        "createdAt": "2020-03-29T02:35:51.286Z",
-        "updatedAt": "2020-04-03T21:31:05.274Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 15,
-        "publishedAt": "2020-04-03T21:31:05.274Z",
-        "firstPublishedAt": "2020-03-29T02:35:57.715Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 16,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "7936xG1RBtwNYADjgD0U37"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "blogs"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Blog Title 1"
-        },
-        "slug": {
-          "en-US": "blog-title-1"
-        },
-        "featureImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "7IyIhq0ijQoK3asaaOMQJM"
-            }
-          }
-        },
-        "description": {
-          "en-US": "## What is Lorem Ipsum?\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n```\nlots\ncode \nhere\n```\n\n`code here`\n\n> quote\n\n"
+          "en-US": "## Why Navigation is Important\n\nIn this tutorial we will look at creating a common element present on almost every website... a responsive navigation bar.\n\n> If they can't find it, they won't see it\n\nNavigation is your website's way of showing how you architected your website, and a structured and simple navigation will give users a much better experience in finding what they essentially are on your site for.\n\n## Getting Started\n\nI'm assuming you know how to begin a react project. If you don't visit the [Create React App](https://reactjs.org/docs/getting-started.html \"create react app\") or [Gatsby Js](https://www.gatsbyjs.org/docs/ \"gatsby js\") website to get an application up and running.\n\nCreate a header component `header.jsx` and create the basic HTML structure for your header.\n\n```\nimport React from 'react';\n\nconst Header = () => (\n  <nav>\n    <ul>\n      <li>\n        <a href=\"#\">Home</a>\n      </li>\n      <li>\n        <a href=\"#\">About</a>\n      </li>\n      ...\n    </ul>\n  </nav>\n);\n\nexport default Header;\n```"
         }
       }
     }
@@ -2409,7 +2337,7 @@
         "id": "7IyIhq0ijQoK3asaaOMQJM",
         "type": "Asset",
         "createdAt": "2020-03-29T02:35:19.508Z",
-        "updatedAt": "2020-03-29T02:35:40.802Z",
+        "updatedAt": "2020-04-05T06:27:37.737Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2417,8 +2345,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2020-03-29T02:35:40.802Z",
+        "publishedVersion": 7,
+        "publishedAt": "2020-04-05T06:27:37.737Z",
         "firstPublishedAt": "2020-03-29T02:35:40.802Z",
         "createdBy": {
           "sys": {
@@ -2434,8 +2362,8 @@
             "id": "7936xG1RBtwNYADjgD0U37"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2450,9 +2378,9 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/xckcqgv0vy98/7IyIhq0ijQoK3asaaOMQJM/a948c5ab6bee5bfd0ffdffd02bce2d4d/joanna-kosinska-1_CMoFsPfso-unsplash.jpg",
+            "url": "//images.ctfassets.net/xckcqgv0vy98/7IyIhq0ijQoK3asaaOMQJM/f7efc6fd816f7a62733aa8459d5a6c18/joanna-kosinska-1_CMoFsPfso-unsplash.jpg",
             "details": {
-              "size": 2616961,
+              "size": 3667372,
               "image": {
                 "width": 6016,
                 "height": 4016
@@ -3130,6 +3058,344 @@
             },
             "fileName": "stefan-cosma-0gO3-b-5m80-unsplash.jpg",
             "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "5CrfwjagQbYQb00Q0YvqkV",
+        "type": "Asset",
+        "createdAt": "2020-04-04T22:17:15.070Z",
+        "updatedAt": "2020-04-04T22:18:58.019Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-04-04T22:18:58.019Z",
+        "firstPublishedAt": "2020-04-04T22:18:58.019Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Screen Shot 2020-04-01 at 4.41.39 PM"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xckcqgv0vy98/5CrfwjagQbYQb00Q0YvqkV/e3e7e816ba254cf961c0794bebead727/Screen_Shot_2020-04-01_at_4.41.39_PM.png",
+            "details": {
+              "size": 367367,
+              "image": {
+                "width": 1348,
+                "height": 1502
+              }
+            },
+            "fileName": "Screen Shot 2020-04-01 at 4.41.39 PM.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "6iXML6eU0BXvXGtFto9s7c",
+        "type": "Asset",
+        "createdAt": "2020-04-04T22:19:13.085Z",
+        "updatedAt": "2020-04-04T22:19:32.867Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-04-04T22:19:32.867Z",
+        "firstPublishedAt": "2020-04-04T22:19:32.867Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Screen Shot 2020-04-01 at 4.41.28 PM"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xckcqgv0vy98/6iXML6eU0BXvXGtFto9s7c/f0d5c05b9c2f63e6d4404e8fffc7acae/Screen_Shot_2020-04-01_at_4.41.28_PM.png",
+            "details": {
+              "size": 104450,
+              "image": {
+                "width": 1450,
+                "height": 1132
+              }
+            },
+            "fileName": "Screen Shot 2020-04-01 at 4.41.28 PM.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "1ZaCkTHhgOHScqgYymTb9l",
+        "type": "Asset",
+        "createdAt": "2020-04-04T22:19:41.544Z",
+        "updatedAt": "2020-04-04T22:19:54.374Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-04-04T22:19:54.374Z",
+        "firstPublishedAt": "2020-04-04T22:19:54.374Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Screen Shot 2020-04-01 at 4.41.22 PM"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xckcqgv0vy98/1ZaCkTHhgOHScqgYymTb9l/47a59ea122a76b041884f2a97239ede2/Screen_Shot_2020-04-01_at_4.41.22_PM.png",
+            "details": {
+              "size": 89964,
+              "image": {
+                "width": 1198,
+                "height": 748
+              }
+            },
+            "fileName": "Screen Shot 2020-04-01 at 4.41.22 PM.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "2MIpfAaNDdkkTLEzjSA5FN",
+        "type": "Asset",
+        "createdAt": "2020-04-04T22:20:05.415Z",
+        "updatedAt": "2020-04-04T22:20:33.762Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-04-04T22:20:33.762Z",
+        "firstPublishedAt": "2020-04-04T22:20:33.762Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Screen Shot 2020-04-01 at 4.41.15 PM"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xckcqgv0vy98/2MIpfAaNDdkkTLEzjSA5FN/b738eaaf5d54dbe3ccc89129acebd361/Screen_Shot_2020-04-01_at_4.41.15_PM.png",
+            "details": {
+              "size": 1014623,
+              "image": {
+                "width": 1214,
+                "height": 674
+              }
+            },
+            "fileName": "Screen Shot 2020-04-01 at 4.41.15 PM.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xckcqgv0vy98"
+          }
+        },
+        "id": "2pWwV0ZZwNNnZ0CZCbLX1S",
+        "type": "Asset",
+        "createdAt": "2020-04-05T09:29:17.554Z",
+        "updatedAt": "2020-04-05T10:19:06.632Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2020-04-05T10:19:06.632Z",
+        "firstPublishedAt": "2020-04-05T09:29:52.318Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7936xG1RBtwNYADjgD0U37"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "responsive-header"
+        },
+        "description": {
+          "en-US": "responsive-header image"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xckcqgv0vy98/2pWwV0ZZwNNnZ0CZCbLX1S/606b0e2cd4d7a1029b409f7fbecbd4e9/responsive-header.png",
+            "details": {
+              "size": 130183,
+              "image": {
+                "width": 2646,
+                "height": 814
+              }
+            },
+            "fileName": "responsive-header.png",
+            "contentType": "image/png"
           }
         }
       }

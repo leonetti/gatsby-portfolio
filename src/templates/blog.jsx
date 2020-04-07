@@ -47,16 +47,18 @@ const Blog = ({ data }) => {
               config={disqusConfig}
             />
           </div>
-          <div className={blogStyles.featuredBlogs}>
-            <h3 className={blogStyles.featuredTitle}>Recent Blogs</h3>
-            {data.allContentfulBlogs.nodes.map((node) => (
-              <Fragment key={shortId.generate()}>
-                {node.id !== blog.id && (
+          {false && (
+            <div className={blogStyles.featuredBlogs}>
+              <h3 className={blogStyles.featuredTitle}>Recent Blogs</h3>
+              {data.allContentfulBlogs.nodes.map((node) => (
+                <Fragment key={shortId.generate()}>
+                  {node.id !== blog.id && (
                   <Link to={`/${node.slug}`}>{node.title}</Link>
-                )}
-              </Fragment>
-            ))}
-          </div>
+                  )}
+                </Fragment>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
