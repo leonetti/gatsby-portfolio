@@ -30,6 +30,11 @@
   }
 }
 
+@mixin section-wrapper-alternate {
+  @include section-wrapper;
+  background-color: $lightestGray;
+}
+
 @mixin section-container {
   max-width: 1140px;
   margin: 0 auto;
