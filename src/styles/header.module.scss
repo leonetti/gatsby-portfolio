@@ -51,7 +51,7 @@
     justify-content: flex-end;
     list-style: none;
 
-    @media screen and (max-width:767px) {
+    @include tablet {
       flex-wrap: wrap;
       flex-direction: column;
       width: 100%;
@@ -63,7 +63,7 @@
   li {
     margin: 0 20px;
 
-    @media screen and (max-width:767px) {
+    @include tablet {
       margin: 0;
     }
   }
@@ -71,7 +71,7 @@
   a {
     @include link;
 
-    @media screen and (max-width:767px) {
+    @include tablet {
       display: inline-block;
       width: 100%;
       border-bottom: 1px solid $white;
@@ -96,7 +96,7 @@
     border: none;
     padding: 0;
 
-    @media screen and (max-width:767px) {
+    @include tablet {
       padding: 6px 20px;
     }
   }

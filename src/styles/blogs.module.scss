@@ -1,9 +1,5 @@
 @import './mixins.scss';
 
-.wrapper {
-  @include section-wrapper;
-}
-
 .container {
   @include section-container;
 }
@@ -26,12 +22,12 @@
   position: relative;
   margin-bottom: 10px;
 
-  @media screen and (max-width:767px) {
+  @include tablet {
     width: calc(50% - 5px);
     height: 200px;
   }
 
-  @media screen and (max-width:475px) {
+  @include phone {
     width: 100%;
   }
 
@@ -40,11 +36,11 @@
     width: calc(50% - 5px);
     height: 300px;
 
-    @media screen and (max-width:767px) {
+    @include tablet {
       height: 200px;
     }
 
-    @media screen and (max-width:475px) {
+    @include tablet {
       width: 100%;
     }
   }
