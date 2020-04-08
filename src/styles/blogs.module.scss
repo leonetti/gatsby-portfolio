@@ -1,5 +1,9 @@
 @import './mixins.scss';
 
+.wrapper {
+  @include section-wrapper;
+}
+
 .container {
   @include section-container;
 }
