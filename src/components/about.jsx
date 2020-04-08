@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
 import Social from './social';
+import Resume from '../documents/portfolio.pdf';
 
 import aboutStyles from '../styles/about.module.scss';
 
@@ -38,6 +39,12 @@ const About = ({ data }) => (
             <strong>Email</strong>
             <p>
               <a target="_blank" rel="noopener noreferrer" href={`mailto:${data.gmail}`}>{data.gmail}</a>
+            </p>
+          </li>
+          <li>
+            <strong>Resume</strong>
+            <p>
+              <a href={Resume} download>Download Resume</a>
             </p>
           </li>
         </ul>
