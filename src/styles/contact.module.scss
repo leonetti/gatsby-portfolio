@@ -38,6 +38,24 @@
   }
 }
 
+.submit {
+  background-color: $medGray;
+  color: $white;
+  cursor: pointer;
+  text-indent: -10px;
+  line-height: 1px;
+  border-radius: 5px;
+  padding: 23px;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  min-width: 180px;
+  font-size: 15px;
+
+  &:hover {
+    background-color: $gray;
+  }
+}
+
 .hidden {
   display: none;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import contactStyles from '../styles/contact.module.scss';
 
@@ -39,7 +40,13 @@ const Contact = () => (
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <motion.button
+            className={contactStyles.submit}
+            type="submit"
+            whileTap={{ scale: 0.95 }}
+          >
+            <motion.span>Send</motion.span>
+          </motion.button>
         </p>
       </form>
     </section>
