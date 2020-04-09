@@ -22,6 +22,10 @@
     top: 100%;
     left: 0;
   }
+
+  @include phone {
+    display: inline-block;
+  }
 }
 
 @mixin section-wrapper {
@@ -40,6 +44,10 @@
 @mixin section-container {
   max-width: 1140px;
   margin: 0 auto;
+
+  @include phone {
+    text-align: center;
+  } 
 }
 
 @mixin card {

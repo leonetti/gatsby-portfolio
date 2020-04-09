@@ -5,7 +5,13 @@
 }
 
 .using-mouse {
-  button, input, textarea {
+  button, input, textarea, div {
     outline: none;
   }
 }
+
+// .slick-track {
+//   div {
+//     outline: none !important;
+//   }
+// }

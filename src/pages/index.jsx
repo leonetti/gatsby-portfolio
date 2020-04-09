@@ -131,7 +131,9 @@ export const pageQuery = graphql`
         name
         subTitle
         description {
-          description
+          childMarkdownRemark {
+            html
+          }
         }
         avatarImage {
           fluid(maxWidth: 600) {
