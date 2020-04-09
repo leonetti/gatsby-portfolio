@@ -11,6 +11,7 @@ const Contact = () => (
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
+        form-name="contact"
         className={contactStyles.form}
       >
         <p className={contactStyles.hidden}>
