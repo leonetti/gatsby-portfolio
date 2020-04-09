@@ -64,6 +64,7 @@
     align-items: center;
     margin-bottom: 10px;
     font-size: 16px;
+    text-align: left;
 
     @include phone {
       font-size: 14px;
@@ -71,6 +72,10 @@
 
     strong {
       width: 160px;
+
+      @include phone {
+        width: 109px;
+      }
     }
 
     p {
