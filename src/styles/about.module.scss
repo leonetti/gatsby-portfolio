@@ -61,6 +61,15 @@
     margin-bottom: 10px;
     font-size: 16px;
 
+    @include phone {
+      font-size: 14px;
+    }
+
+    @include phone-small {
+      display: block;
+      text-align: center;
+    }
+
     strong {
       width: 160px;
     }
