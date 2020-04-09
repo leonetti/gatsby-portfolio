@@ -9,7 +9,7 @@ import Skills from '../components/skills';
 import Blogs from '../components/blogs';
 import Works from '../components/works';
 import Testimonials from '../components/testimonials';
-// import Contact from '../components/contact';
+import Contact from '../components/contact';
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => (
     <Testimonials
       data={data.allContentfulTestimonials}
     />
-    {/* <Contact /> */}
+    <Contact />
   </Layout>
 );
 
