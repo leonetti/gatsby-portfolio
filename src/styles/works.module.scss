@@ -1,0 +1,51 @@
+@import './mixins.scss';
+
+.wrapper {
+  @include section-wrapper-alternate;
+}
+
+.container {
+  @include section-container;
+}
+
+.heading {
+  @include section-header;
+}
+
+.worksList {
+  @include photo-list;
+}
+
+.work {
+  @include photo-list-item;
+}
+
+.inner {
+  @include photo-list-transition;
+}
+
+.workLink {
+  @include photo-list-item-link;
+  line-height: 0; 
+  font-size: 0;
+  color: transparent; 
+}
+
+.imageWrapper {
+  height: 100%;
+}
+
+.siteName {
+  @include text-shadow;
+  position: absolute;
+  color: $white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(51,51,51,.7);
+}

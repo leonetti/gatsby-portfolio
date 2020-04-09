@@ -7,7 +7,7 @@ import Landing from '../components/landing';
 import About from '../components/about';
 import Skills from '../components/skills';
 import Blogs from '../components/blogs';
-// import Work from '../components/work';
+import Works from '../components/works';
 // import Testimonials from '../components/testimonials';
 // import Contact from '../components/contact';
 
@@ -42,7 +42,9 @@ const IndexPage = ({ data }) => (
     <Blogs
       data={data.allContentfulBlogs}
     />
-    {/* <Work /> */}
+    <Works
+      data={data.allContentfulWorks}
+    />
     {/* <Testimonials /> */}
     {/* <Contact /> */}
   </Layout>
@@ -53,6 +55,7 @@ IndexPage.propTypes = {
     contentfulAboutMe: PropTypes.object,
     allContentfulSkills: PropTypes.object,
     allContentfulBlogs: PropTypes.object,
+    allContentfulWorks: PropTypes.object,
   }).isRequired,
 };
 
@@ -105,6 +108,19 @@ export const pageQuery = graphql`
           }
         }
         createdAt(formatString:"MMM DD, YYYY")
+      }
+    }
+    allContentfulWorks(sort: { fields: endDate, order: DESC }, limit: 5) {
+      nodes {
+        siteName
+        url
+        startDate(formatString:"MMM YYYY")
+        endDate(formatString:"MMM YYYY")
+        image {
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid_withWebp
+          }
+        }
       }
     }
   }
