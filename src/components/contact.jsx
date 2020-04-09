@@ -16,7 +16,8 @@ const Contact = () => (
         <p className={contactStyles.hidden}>
           <label htmlFor="bot-field">
             Don’t fill this out if you are human:
-            <input name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
           </label>
         </p>
         <p>
