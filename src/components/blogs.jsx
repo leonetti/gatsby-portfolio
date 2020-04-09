@@ -9,7 +9,7 @@ import blogsStyles from '../styles/blogs.module.scss';
 
 const Blogs = ({ data, blogsPage }) => (
   <div id="blogs" className={blogsStyles.wrapper}>
-    <div className={blogsStyles.container}>
+    <section className={blogsStyles.container}>
       <h2 className={blogsStyles.heading}>Blogs</h2>
 
       <ul className={blogsStyles.blogsList}>
@@ -21,7 +21,7 @@ const Blogs = ({ data, blogsPage }) => (
                 fluid={item.featureImage.fluid}
                 className={blogsStyles.imageWrapper}
               />
-              <div className={blogsStyles.blogInfo}>
+              <section className={blogsStyles.blogInfo}>
                 <h3 className={blogsStyles.title}>{item.title}</h3>
                 <span className={classNames({
                   'fa fa-calendar-alt': true,
@@ -29,7 +29,7 @@ const Blogs = ({ data, blogsPage }) => (
                 })}
                 />
                 <time className={blogsStyles.date}>{item.createdAt}</time>
-              </div>
+              </section>
             </div>
           </li>
         ))}
@@ -40,7 +40,7 @@ const Blogs = ({ data, blogsPage }) => (
           <span>More Blogs</span>
         </Link>
       )}
-    </div>
+    </section>
   </div>
 );
 

@@ -5,7 +5,7 @@ import skillsStyles from '../styles/skills.module.scss';
 
 const Skills = ({ data }) => (
   <div id="skills" className={skillsStyles.wrapper}>
-    <div className={skillsStyles.container}>
+    <section className={skillsStyles.container}>
       <h2 className={skillsStyles.heading}>Skills</h2>
       <div className={skillsStyles.skillList}>
         {data.nodes.map((skill) => (
@@ -18,7 +18,7 @@ const Skills = ({ data }) => (
           </div>
         ))}
       </div>
-    </div>
+    </section>
   </div>
 );
 

@@ -8,7 +8,7 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import Blogs from '../components/blogs';
 import Works from '../components/works';
-// import Testimonials from '../components/testimonials';
+import Testimonials from '../components/testimonials';
 // import Contact from '../components/contact';
 
 const IndexPage = ({ data }) => (
@@ -45,7 +45,9 @@ const IndexPage = ({ data }) => (
     <Works
       data={data.allContentfulWorks}
     />
-    {/* <Testimonials /> */}
+    <Testimonials
+      data={data.allContentfulTestimonials}
+    />
     {/* <Contact /> */}
   </Layout>
 );
@@ -56,6 +58,7 @@ IndexPage.propTypes = {
     allContentfulSkills: PropTypes.object,
     allContentfulBlogs: PropTypes.object,
     allContentfulWorks: PropTypes.object,
+    allContentfulTestimonials: PropTypes.object,
   }).isRequired,
 };
 
@@ -119,6 +122,20 @@ export const pageQuery = graphql`
         image {
           fluid(maxWidth: 600) {
             ...GatsbyContentfulFluid_withWebp
+          }
+        }
+      }
+    }
+    allContentfulTestimonials(sort: { fields: createdAt, order: DESC }, limit: 4) {
+      nodes {
+        name
+        subTitle
+        description {
+          description
+        }
+        avatarImage {
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid
           }
         }
       }
