@@ -1,7 +1,7 @@
 @import './mixins.scss';
 
 .wrapper {
-  @include section-wrapper-alternate;
+  @include section-wrapper;
 }
 
 .container {
