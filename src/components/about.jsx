@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
 import Social from './social';
-import Resume from '../documents/portfolio.pdf';
+import Resume from '../documents/resume.pdf';
 
 import aboutStyles from '../styles/about.module.scss';
 
