@@ -33,6 +33,23 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Alex Leonetti Personal Site',
+        short_name: 'Alex Leonetti',
+        start_url: '/',
+        display: 'standalone',
+        icon: 'src/images/favicon.png',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-eslint',
       loader: 'eslint-loader',
       options: {
