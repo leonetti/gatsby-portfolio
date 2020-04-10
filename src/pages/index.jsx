@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
+import SEO from '../components/seo';
 import Layout from '../components/layout';
 import Landing from '../components/landing';
 import About from '../components/about';
@@ -13,6 +14,10 @@ import Contact from '../components/contact';
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
+    <SEO
+      title="Home"
+      keywords={['Home', 'About Me', 'Skills', 'Blogs', 'Work', 'Testimonials', 'Contact', 'Email', 'Resume', 'LinkedIn', 'Github', 'ZipRecruiter', 'HackReactor', 'Marketplace']}
+    />
     <Landing
       data={{
         name: data.contentfulAboutMe.name,

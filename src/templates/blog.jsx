@@ -5,8 +5,9 @@ import Img from 'gatsby-image';
 import { graphql, Link } from 'gatsby';
 import shortId from 'shortid';
 import classNames from 'classnames';
-
 import { DiscussionEmbed } from 'disqus-react';
+
+import SEO from '../components/seo';
 import Layout from '../components/layout';
 
 import blogStyles from '../styles/blog.module.scss';
@@ -20,6 +21,10 @@ const Blog = ({ data }) => {
   };
   return (
     <Layout>
+      <SEO
+        title={blog.title}
+        keywords={[blog.title, 'Blog', 'Tutorial', 'Coding']}
+      />
       <div id="blog" className={blogStyles.wrapper}>
         <div className={blogStyles.container}>
           <div className={blogStyles.content}>
