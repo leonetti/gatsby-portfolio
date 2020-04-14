@@ -10,11 +10,17 @@ if (process.env.ENVIRONMENT !== 'production') {
   dotenv.config();
 }
 
-const { spaceId, accessToken } = process.env;
+const { spaceId, accessToken, trackingId } = process.env;
 
 module.exports = {
   /* Your site config here */
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId,
+      },
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: {
