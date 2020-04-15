@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import { Link } from 'gatsby';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { motion } from 'framer-motion';
+import Resume from '../documents/resume.pdf';
 
 import headerStyles from '../styles/header.module.scss';
 
@@ -190,6 +191,9 @@ const Header = ({ header }) => {
                   </li>
                   <li onKeyPress={() => setIsOpen(false)}>
                     <AnchorLink to="/#testimonials"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Testimonials</button></AnchorLink>
+                  </li>
+                  <li onKeyPress={() => setIsOpen(false)}>
+                    <a href={Resume} download="Alex Leonetti Resume"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Resume</button></a>
                   </li>
                   <li onKeyPress={() => setIsOpen(false)}>
                     <AnchorLink to="/#contact"><button tabIndex="-1" type="button" onClick={() => setIsOpen(false)}>Contact</button></AnchorLink>

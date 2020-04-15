@@ -44,7 +44,7 @@ const About = ({ data }) => (
           <li>
             <strong>Resume</strong>
             <p>
-              <a href={Resume} download>Download Resume</a>
+              <a href={Resume} download="Alex Leonetti Resume">Download Resume</a>
             </p>
           </li>
         </ul>
