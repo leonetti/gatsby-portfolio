@@ -13,9 +13,8 @@ const sliderSettings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   pauseOnHover: true,
-  autoplaySpeed: 6000,
   infinite: true,
   arrows: false,
 };
